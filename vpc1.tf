@@ -1,3 +1,8 @@
+provider "aws" {
+  region     = "eu-north-1"
+  version = "~> 5.0"
+}
+
 resource "aws_vpc" "VPC_1_terraform_test_1" {
   cidr_block       = "10.1.0.0/16"
 
